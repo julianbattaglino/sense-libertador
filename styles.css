@@ -1,23 +1,48 @@
 @font-face {
     font-family: 'Adam Light';
-    src: url('assets/fonts/Adam-Light/Adam-Light.eot'); /* IE9 Compat Modes */
-    src: url('assets/fonts/Adam/Adam-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('assets/fonts/Adam-Light/Adam-Light.otf') format('otf'), /* Legacy iOS */
-         url('assets/fonts/Adam-Light/Adam-Light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('assets/fonts/Adam-Light/Adam-Light.woff2') format('woff2'), /* Pretty Modern Browsers */
-         url('assets/fonts/Adam-Light/Adam-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('assets/fonts/Adam-Light/Adam-Light.svg#Adam-Light') format('svg'); /* Legacy iOS */
-  }
-  
-  @font-face {
+    src: url('assets/fonts/Adam-Light/Adam-Light.eot');
+    /* IE9 Compat Modes */
+    src: url('assets/fonts/Adam/Adam-Light.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('assets/fonts/Adam-Light/Adam-Light.otf') format('otf'),
+        /* Legacy iOS */
+        url('assets/fonts/Adam-Light/Adam-Light.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('assets/fonts/Adam-Light/Adam-Light.woff2') format('woff2'),
+        /* Pretty Modern Browsers */
+        url('assets/fonts/Adam-Light/Adam-Light.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('assets/fonts/Adam-Light/Adam-Light.svg#Adam-Light') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
     font-family: 'Gotham Book';
-    src: url('assets/fonts/Gotham/Gotham-Book.eot'); /* IE9 Compat Modes */
-    src: url('assets/fonts/Gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('assets/fonts/Gotham/Gotham-Book.woff') format('woff'), /* Pretty Modern Browsers */
-         url('assets/fonts/Gotham/Gotham-Book.woff2') format('woff2'), /* Pretty Modern Browsers */
-         url('assets/fonts/Gotham/Gotham-Book.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('assets/fonts/Gotham/Gotham-Book.svg#Gotham-Book') format('svg'); /* Legacy iOS */
-  }
+    src: url('assets/fonts/Gotham/Gotham-Book.eot');
+    /* IE9 Compat Modes */
+    src: url('assets/fonts/Gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('assets/fonts/Gotham/Gotham-Book.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham/Gotham-Book.woff2') format('woff2'),
+        /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham/Gotham-Book.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('assets/fonts/Gotham/Gotham-Book.svg#Gotham-Book') format('svg');
+    /* Legacy iOS */
+}
+
+.title-underline {
+    color: #c9beb6;
+    width: 5% !important;
+    align-items: center;
+    display: block;
+    margin: auto;
+    border-top: 3px solid;
+    border: 1;
+    opacity: 1;
+}
+
 
 /* Header */
 
@@ -339,8 +364,8 @@ body.fixed:not(.absolute) {
     background-position: center;
     background-size: cover;
     background-image: url("./assets/img/1.jpg");
-    height: 100vh;
-  }
+    height: 80vh;
+}
 
 /* Intro Text */
 div.section-intro {
@@ -374,13 +399,17 @@ h2.values {
     font-weight: bold;
     letter-spacing: 8px;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 /* Section grid renders */
 .row>* {
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+
+div.grid-container {
+    padding: 50px 0;
 }
 
 div.col {
@@ -395,8 +424,114 @@ img.grid-item {
     transition: all 0.3s linear;
     filter: grayscale(100%);
 }
+
 img.grid-item:hover {
     filter: grayscale(0%);
 }
 
+/* Section plantas-planos */
+div.section-plantas {
+    padding: 50px 0;
+}
 
+h2.plantas {
+    color: #000000;
+    font-family: "Adam Light", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    padding: 75px 0 0 0;
+}
+
+img.plano {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+/* Section Location */
+div.section-location {
+    max-width: 1140px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+h2.location {
+    color: #000000;
+    font-family: "Adam Light", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.col-border {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #C9BEB6;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.img-location {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Back to top floating button */
+#back-top {
+    background: #C9BEB6;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center 15px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0px;
+    opacity: 0.8;
+    display: block;
+}
+
+img.arrow-top {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 500px) {
+
+    .title-underline {
+        width: 20% !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .background-transition {
+        height: 25vh;
+    }
+
+    img.plano {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .background-transition {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .background-transition {
+        height: 50vh;
+    }
+}
