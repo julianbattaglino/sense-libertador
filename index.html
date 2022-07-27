@@ -13,6 +13,8 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -81,7 +83,7 @@
     <div class="background-transition"></div>
     <!-- Section Intro -->
     <div id="filosofia" class="section-intro">
-        <h1 class="title">Los valores hacen la diferencia.</h1>
+        <h1 class="title" data-aos="zoom-in">Los valores hacen la diferencia.</h1>
         <p class="intro-text">SENSE es para nosotros sinónimo de compromiso.</p>
         <p class="intro-text">Creemos que los valores más importantes al momento de adquirir un<br>inmueble o realizar
             una inversión son los que perduran en el tiempo.</p>
@@ -93,7 +95,7 @@
         <p class="intro-text">Tomate el tiempo para explorar tus sentidos y empezá<br>desde ahora a disfrutar de un
             espacio SENSE para vos.</p>
         <p class="intro-text">Construímos con valores.</p>
-        <h2 class="values">BUILDING VALUES</h2>
+        <h2 class="values" data-aos="zoom-in">BUILDING VALUES</h2>
     </div>
 
     <!-- Section Grid Renders -->
@@ -161,58 +163,195 @@
 
         <div class="row">
             <div class="col-12">
-                <img class="plano" src="./assets/img/planos/PLANTA-01.jpg" alt="">
+                <img data-aos="fade-right" class="plano" src="./assets/img/planos/PLANTA-01.jpg" alt="">
             </div>
             <div class="col-12">
-                <img class="plano" src="./assets/img/planos/PLANTA-02.jpg" alt="">
+                <img data-aos="fade-left" class="plano" src="./assets/img/planos/PLANTA-02.jpg" alt="">
             </div>
             <div class="col-12">
-                <img class="plano" src="./assets/img/planos/PLANTA-03.jpg" alt="">
+                <img data-aos="fade-right" class="plano" src="./assets/img/planos/PLANTA-03.jpg" alt="">
             </div>
             <div class="col-12">
-                <img class="plano" src="./assets/img/planos/PLANTA-04.jpg" alt="">
+                <img data-aos="fade-left" class="plano" src="./assets/img/planos/PLANTA-04.jpg" alt="">
             </div>
 
         </div>
     </div>
 
-        <!-- Section Location -->
-        <div id="location" >
-            <h2 class="location">UBICACION</h2>
-            <hr class="title-underline">
+    <!-- Section Location -->
+    <div id="location">
+        <h2 class="location">UBICACION</h2>
+        <hr class="title-underline">
 
-            <div class="row section-location">
+        <div class="row section-location">
 
-                <div class="col-12 col-md-6 col-border">
-                    <img class="img-location" src="./assets/img/Mapa_Sense_Acassuso.jpg" alt="">
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 col-border">
-                    <img class="img-location" src="./assets/img/Un-Entorno-Ideal.jpg" alt="">
-                </div>
+            <div class="col-12 col-md-6 col-border">
+                <img class="img-location" src="./assets/img/Mapa_Sense_Acassuso.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-border">
+                <img class="img-location" src="./assets/img/Un-Entorno-Ideal.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section Contact -->
+    <div id="contacto" class="section-contact">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="contact">CONTACTO</h1>
+                    <hr class="underline-contacto">
+                    <ul>
+                        <li class="footer-list">
+                            <a href="https://goo.gl/maps/K3MFqjDUP9LtPGLP6" target="_blank">
+                                <span><i aria-hidden="true" class="fas fa-map-marker-alt"></i> </span>
+                                <span class="text">Juan P. Esnaola 2647 - 1643 Béccar</span>
+                            </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="mailto:ventas@sensemanantiales.com.ar" target="_blank">
+                                <span><i aria-hidden="true" class="far fa-envelope"></i></span>
+                                <span class="text">ventas@sensemanantiales.com.ar</span>
+                            </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="tel:+541148975424" target="_blank"> <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fas fa-phone"></i> </span>
+                                <span class="text">4897-5423/24</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li class="footer-list">
+                            <a href="https://www.facebook.com/haemprendimientos" target="_blank">
+                                <span><i aria-hidden="true" class="fab fa-facebook-f"></i> </span>
+                                <span class="text">/Haemprendimientos</span>
+                            </a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="https://www.instagram.com/ha_emprendimientos/" target="_blank">
+                                <span><i aria-hidden="true" class="fab fa-instagram"></i> </span>
+                                <span class="text">@Haemprendimientos</span>
+                            </a>
+                        </li>
+                    </ul>
 
             </div>
+            <div class="col-12 col-lg-6">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6 pe-lg-2">
+                            <input type="text" class="form-control rounded-0" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control rounded-0" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="textarea" placeholder="¡Dejanos tu mensaje!" rows="5"></textarea>
+                            <button type="submit" class="btn-submit">ENVIAR</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
         </div>
+    </div>
 
-        <!-- Back to top floating button -->
-        <div id="back-top">
-            <a href="#"><img class="arrow-top" src="./assets/img/arrow-back-to-top.png" alt="Sense Libertador - Back to top"></a>    
+    <!-- Back to top floating button -->
+    <div id="back-top">
+        <a href="#"><img class="arrow-top" src="./assets/img/arrow-back-to-top.png"
+                alt="Sense Libertador - Back to top"></a>
+    </div>
+
+    <footer>
+        <div class="row footer-container">
+            <div class="col-12 col-lg-5 col-about">
+                <img class="logo-footer" src="./assets/img/logo-ha-footer.png" alt="Sense Libertador - Logo">
+                <p class="text-about">Intervenimos en Desarrollos Inmobiliarios desde su principio hasta el fin, con
+                    el foco especialmente puesto en la mejora de los numerosos procesos que involucran la realización
+                    llave en mano de productos inmobiliarios.</p>
+            </div>
+
+            <div class="col-12 col-lg-3 col-footer">
+                <h3 class="footer">DATOS DE CONTACTO</h3>
+                <ul>
+                    <li class="footer-list">
+                        <a href="https://goo.gl/maps/K3MFqjDUP9LtPGLP6" target="_blank">
+                            <span><i aria-hidden="true" class="fas fa-map-marker-alt"></i> </span>
+                            <span class="text">Juan P. Esnaola 2647 - 1643 Béccar</span>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="mailto:ventas@sensemanantiales.com.ar" target="_blank">
+                            <span><i aria-hidden="true" class="far fa-envelope"></i></span>
+                            <span class="text">ventas@sensemanantiales.com.ar</span>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="tel:+541148975424" target="_blank"> <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="fas fa-phone"></i> </span>
+                            <span class="text">4897-5423/24</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h3 class="footer redes">REDES</h3>
+                <ul>
+                    <li class="footer-list">
+                        <a href="https://www.facebook.com/haemprendimientos" target="_blank">
+                            <span><i aria-hidden="true" class="fab fa-facebook-f"></i> </span>
+                            <span class="text">/Haemprendimientos</span>
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="https://www.instagram.com/ha_emprendimientos/" target="_blank">
+                            <span><i aria-hidden="true" class="fab fa-instagram"></i> </span>
+                            <span class="text">@Haemprendimientos</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="col-12 col-lg-3 col-footer">
+                <h3 class="footer">MAPA DE SITIO</h3>
+                <li class="footer-list"><a href="#filosofia">Filosofía</a></li>
+                <li class="footer-list"><a href="#imagenes">Imagenes</a></li>
+                <li class="footer-list"><a href="#plantas">Plantas</a></li>
+                <li class="footer-list"><a href="#location">Ubicación</a></li>
+                <li class="footer-list"><a href="#contacto">Contacto</a></li>
+
+            </div>
+
+
         </div>
+    </footer>
 
 
 
-            <!-- Jquery 3.6.0 -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-            <!-- Main -->
-            <script src=""></script>
-            <script src="./assets/js/menu.js"></script>
+    <!-- Main -->
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/menu.js"></script>
 
-            <!-- Bootstrap JavaScript Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-                crossorigin="anonymous"></script>
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
